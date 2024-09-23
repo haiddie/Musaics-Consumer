@@ -1,0 +1,24 @@
+/* Define styles for Swiper navigation buttons */
+.swiperButton {
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .swiperButtonPrev {
+    left: 10px; /* Adjust the left position */
+  }
+  
+  .swiperButtonNext {
+    right: 10px; /* Adjust the right position */
+  }
+
+  

@@ -1,0 +1,23 @@
+trigger:
+- qa
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSource: 'spec'
+    versionSpec: '18.x'
+- script: |
+    npm install
+    npm run build
+  displayName: "Install Packages & Create Build"
+- task: AzureStaticWebApp@0
+  inputs:
+    app_location: 'out'
+    skip_app_build: true
+    skip_api_build: true
+    azure_static_web_apps_api_token: '9f06ea0c566cc8ce4c698d798ae8e8f3807045c93778b3de842092e270aa9f6d4-def77b3d-c087-410b-a8d4-2aba1b036fd7010293569'
+  
+

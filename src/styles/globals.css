@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@100;300;400;500;600;700;800;900&family=Kanit:wght@100;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+@layer base {
+  @font-face {
+    font-family: 'FranklinGothic-Regular';
+    src: url('/fonts/FranklinGothic-Regular.woff')
+  }
+
+  @font-face {
+    font-family: 'FranklinGothic-Medium';
+    src: url('/fonts/FranklinGothic-Medium.woff')
+  }
+
+  @font-face {
+    font-family: 'FranklinGothic-Bold';
+    src: url('/fonts/FranklinGothic-Bold.woff')
+  }
+
+  @font-face {
+    font-family: 'RohnRounded-Regular';
+    src: url('/fonts/RohnRounded-Regular.ttf')
+  }
+
+  @font-face {
+    font-family: 'RohnRounded-Medium';
+    src: url('/fonts/RohnRounded-Medium.ttf')
+  }
+
+  @font-face {
+    font-family: 'RohnRounded-Heavy';
+    src: url('/fonts/RohnRounded-Heavy.ttf')
+  }
+
+  @font-face {
+    font-family: 'RohnRounded-Bold';
+    src: url('/fonts/RohnRounded-Bold.ttf')
+  }
+
+  @font-face {
+    font-family: 'RohnRounded-Black';
+    src: url('/fonts/RohnRounded-Black.ttf')
+  }
+}
+
+.musaics-text>h2 {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.trivia-text>p {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.trivia-text>h2>span {
+  color:black!important
+}
+
+.news-post>p {
+  margin-bottom: 12px;
+}
+
+.news-post>figure {
+  margin-bottom: 24px;
+}
+
+.news-post>figure>img {
+  margin-bottom: 12px;
+}
+
+.news-post>h2 {
+  font-weight: 700;
+  color: white;
+  margin-bottom: 12px;
+  padding-top: 18px;
+}
+
+.news-post>figure:first-of-type {
+  display: none;
+}
+
+.Demo__container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, 30px);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.Demo__some-network {
+  text-align: center;
+}
+
+.Demo__some-network__share-count {
+  display: inline-flex;
+  justify-content: center;
+  white-space: nowrap;
+  overflow: visible;
+  width: 0;
+  font-size: 14px;
+}
+
+.Demo__some-network__share-button {
+  cursor: pointer;
+}
+
+.Demo__some-network__share-button:hover:not(:active) {
+  opacity: 0.75;
+}
+
+.swiper-pagination-bullet {
+  background-color: white !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: white !important;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #7957f7;
+  border-radius: 50%;
+  filter: blur(4px);
+}
+
+.dot.blink {
+  -webkit-animation: blink-animation 1.5s infinite;
+  animation: blink-animation 1.5s infinite;
+}
+
+@-webkit-keyframes blink-animation {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink-animation {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

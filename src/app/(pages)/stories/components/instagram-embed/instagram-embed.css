@@ -1,0 +1,8 @@
+.instagram-embed p span{
+    background-color: transparent!important;
+    color:white!important
+  }
+
+  .instagram-embed iframe {
+width: 100%;
+  }

@@ -1,0 +1,20 @@
+.active-page{
+    background-color:#8B5CF6;
+    border-radius:50px;
+    color:white!important;
+}
+
+.page-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .page-number {
+    margin: 5px; /* Adjust the margin as needed */
+  }
+  
+  /* Add margin to the first page number when there's a previous button */
+  .page-number:first-child {
+    margin-left: 0;
+  }
